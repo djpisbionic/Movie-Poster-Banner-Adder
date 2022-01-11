@@ -10,6 +10,9 @@ Requirements:
 * PHP with Curl Enabled in php.ini (https://www.php.net)
 * TheMovieDB.org API Key (https://www.themoviedb.org)
 * ImageMagicK (https://imagemagick.org/index.php)
+* MediaInfo (https://mediaarea.net/en/MediaInfo/Download/Windows)
+
+Make sure mediainfo, imagemagick, php are all in your windows path.
 
 This script can be ran manually every time you wish to update, or you can set the directory to monitor in the php file and set it on a scheduler of your choice. If you wish to regenerate a poster for a particular movie, delete the poster_skip file within that directory. 
 
