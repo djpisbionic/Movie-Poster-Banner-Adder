@@ -60,10 +60,12 @@ foreach($files as $filemy) {
 	    foreach($files2 as $filemy2) {
 			$skip_check = $file.$filemy.'/poster_skip';
 			if (!file_exists($skip_check)) {
+				$type = '';
 				$ext = strtolower(pathinfo($filemy2, PATHINFO_EXTENSION));
 				if (in_array($ext, $supported_movie)) {
 					$mi = new mediaInfo($file.$filemy.'/'.$filemy2);
 					$info = $mi->get_video_info();
+					$hdr = '';
 					if (isset($info['HDR format'])) { $hdr = $info['HDR format']; };
 					$width = str_replace(' ', '', $info['Width']); 
 					$width = str_replace('pixels', '', $width);
