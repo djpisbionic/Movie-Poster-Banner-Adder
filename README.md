@@ -2,7 +2,7 @@ Creates 4K / 4K HDR / BluRay Banners depending on the resolution of your video f
 
 If a poster.jpg exists already within your movie folder, it will use that poster to add the banner to. If there is no poster.jpg, it will connect to TheMovieDB.org and download one, add the banner and save it as poster.jpg, it will also save the original as poster-BACKUP.jpg incase you wish to revert to original.
 
-Written in simple PHP code, its a mess, and I really don't care, it works. Feel free to edit it how you please or push updates to the github. I needed something fast and easy because doing this manually was tedius, and the only other script I could find required docker, and im no python savant so PHP it is.. 
+Written in simple PHP code, its a mess, and I really don't care, it works. Feel free to edit it how you please or push updates to the github. I needed something fast and easy because doing this manually was tedius, and the only other script I could find required docker, so a PHP cli script it is.. 
 
 This was written specifically for my Windows server, but should work with linux no problem.
 
